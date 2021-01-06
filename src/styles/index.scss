@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@import 'constants.scss';
+
+$body-background-color: $dark-2;
+$body-color: $text-color-1;
+$family-primary: 'Poppins', 'Helvetica', 'sans-serif';
+$link-hover: $text-color-2;
+$border: $border-color;
+$link: $primary;
+$input-hover-color: $text-color-2;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+@import "~bulma/bulma";
+
+html {
+    overflow: hidden;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.title {
+    color: $body-color;
+}
+
+.label {
+    color: $text-color-2;
+}
+
+.input, .textarea {
+    background: none;
+    color: #fff;
+    border-width: 2px;
+    border-radius: 2px;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #737373;
+    font-weight: normal;
+}

@@ -1,0 +1,39 @@
+@import '../../styles/constants.scss';
+
+.editor-card {
+    border-bottom: 1px solid $dark-2;
+    .editor-card__button {
+        background: $dark-3;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        color: inherit;
+        font: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .editor-card__button:hover {
+        opacity: $hover-opacity;
+    }
+    
+    .editor-card__button:focus,
+    .editor-card__button:active {
+        outline: none;
+        border-bottom: none;
+    }
+    
+    .editor-card__icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .editor-card__content {
+        overflow: hidden;
+    }
+}
+
+.editor-card.is-open {
+    border-bottom: 1px solid $border-color;
+}

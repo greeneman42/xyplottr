@@ -1,0 +1,7 @@
+@import '../../styles/constants.scss';
+
+.sidebar {
+    width: 350px;
+    background: $dark-1;
+    overflow-y: auto;
+}
